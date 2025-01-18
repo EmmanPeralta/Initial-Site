@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy Tickets - PFF WOMEN'S CUP 2025</title>
+    <link rel="stylesheet" href="index.css">
+    <script src = "buy.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <a href="index.html">
+                <img src="C:\Users\Admin\Desktop\PUP FILES\Web Development\Website\logo.png" 
+                alt="Button Image" style="width: 400px; height: auto;">
+            </a>
+        </div>
+
+        <div class="ticket-options">
+            <div class="event1">
+                <div class="event-card">
+                    <span class="badge live">Live</span>
+                    <img src="C:\Users\Admin\Desktop\PUP FILES\Web Development\Website\event1.jpg">
+                    <div class="content">
+                        <h3>PFF WOMEN'S CUP 2025</h3>
+                    </div>
+                </div>
+
+                <div class="ticket-row">
+                    <h3>Upper Seat: ₱499</h3>
+                    <button onclick="updateQuantity('upper-seat-qty', -1)">-</button>
+                    <input type="text" id="upper-seat-qty" value="0" style="width: 40px; text-align: center;" readonly>
+                    <button onclick="updateQuantity('upper-seat-qty', 1)">+</button>
+                    
+                    <h3>Middle Seat: ₱899</h3>
+                    <button onclick="updateQuantity('middle-seat-qty', -1)">-</button>
+                    <input type="text" id="middle-seat-qty" value="0" style="width: 40px; text-align: center;" readonly>
+                    <button onclick="updateQuantity('middle-seat-qty', 1)">+</button>
+                    
+                    <h3>Lower Seat: ₱1499</h3>
+                    <button onclick="updateQuantity('lower-seat-qty', -1)">-</button>
+                    <input type="text" id="lower-seat-qty" value="0"  style="width: 40px; text-align: center;" readonly>
+                    <button onclick="updateQuantity('lower-seat-qty', 1)">+</button>
+                    <hr>
+                    <p>Total: <span id="total-price">₱ 0</span></p>
+                    
+                    <a href="Event1.html" class="back-button">Go Back</a>
+                    <button onclick="proceedToCheckout()" class="checkout-button">Checkout</button>
+                </div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

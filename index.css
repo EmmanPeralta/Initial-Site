@@ -1,0 +1,183 @@
+body {
+font-family: Arial, sans-serif;
+background: linear-gradient(to bottom, #00045f, #6a0096);
+color: white;
+margin: 0;
+padding: 0;
+overflow: hidden;
+}
+
+html {
+margin: 0;
+padding: 0;
+height: 100%;
+overflow: hidden; 
+}
+
+.container {
+padding: 20px;
+}
+
+.header {
+text-align: center;
+margin-bottom: 20px;
+}
+
+.events {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.event1 {
+display: flex;
+flex-wrap: wrap;
+gap: 20px;
+justify-content: center;
+}
+
+.event-card {
+background-color: #00000080;
+border-radius: 10px;
+width: calc(26% - 15px);
+overflow: hidden;
+text-align: center;
+box-sizing: border-box;
+transition: transform 0.3s ease;
+color: white;
+padding: 16px;
+text-decoration: none;
+}
+
+.event-card:hover {
+transform: scale(1.05);
+}
+
+.event-card img {
+width: 100%;
+height: auto;
+object-fit: cover;
+}
+
+.event-card .badge.live {
+position: absolute;
+margin-top: 10px;
+margin-left: 10px;
+background-color: green;
+color: white;
+padding: 5px 10px;
+border-radius: 5px;
+font-size: 0.8em;
+}
+
+.event-card .badge.upcoming {
+position: absolute;
+margin-top: 10px;
+margin-left: 10px;
+background-color: darkorange;
+color: white;
+padding: 5px 10px;
+border-radius: 5px;
+font-size: 0.8em;
+}
+
+.event-card .badge.archived {
+position: absolute;
+margin-top: 10px;
+margin-left: 10px;
+background-color: red;
+color: white;
+padding: 5px 10px;
+border-radius: 5px;
+font-size: 0.8em;
+}
+
+.event-card .content {
+padding: 10px;
+}
+
+.event-card .content h3 {
+margin: 8px 0;
+font-size: 1.1em;
+}
+
+.event-card .content a {
+display: inline-block;
+margin-top: 10px;
+padding: 8px 12px;
+background-color: #6c63ff;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 0.8em;
+}
+
+.event-card .content a:hover {
+background-color: #5845d8;
+}
+
+.back-button {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 20px;
+background-color: #00000080;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 1em;
+text-align: center;
+}
+
+.back-button:hover {
+background-color: #5845d8;
+}
+
+.buy-ticket-button {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 20px;
+background-color: #00000080; 
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 1em;
+text-align: center;
+}
+
+.buy-ticket-button:hover {
+background-color: #45a049; 
+}
+
+.checkout-button {
+display: inline-block;
+margin-top: 20px;
+padding: 10px 20px;
+background-color: #00000080; 
+color: white;
+text-decoration: none;
+border-radius: 5px;
+font-size: 1em;
+text-align: center;
+border: none; 
+outline: none; 
+}
+
+.checkout-button:hover {
+background-color: #45a049; 
+}
+
+.checkout-goback {
+position: fixed;
+top: 55%; 
+left: 60%; 
+padding: 10px 20px;
+background-color: #00000080;
+color: white;
+text-decoration: none;
+border-radius: 5px;
+}
+
+.checkout-goback:hover {
+background-color: #5845d8;
+}
